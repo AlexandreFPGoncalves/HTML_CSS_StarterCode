@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<!--Linguagem e diração do texto left to right-->
+<html lang="en" dir="ltr">
+
+<head>
+	<!-- especifica qual o tipo de caracteres aceites para o html UTF-8 = character encoding for Unicode
+	ISO-8859-1 Character encoding for the Latin alphabet -->
+	<meta charset="utf-8">
+	<!--Titulo-->
+	<title>_LoginForm_2</title>
+	<!--Ligação ao css-->
+	<link rel="stylesheet" href="style.css">
+	<!--jquery script-->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" charset="urf-8"></script>
+
+	<!--Script para auto refresh da pagina 
+	<script>
+		window.onload = function() {  // reload file every second
+		setInterval(function() { location.reload(); } , 1000);
+		};
+	</script> -->
+
+</head>
+
+
+<body>
+	<!--Inicio do form onde vão ficar todas as coisas relacionadas ao login in-->
+	<form action="index.html" class="login-form">
+		<!--Random Text em h1-->
+		<h1>Login</h1>
+		<!--Div1 com um placeholder para o Username -->
+		<div class="txtb"> 
+			<input type="text">
+			<span data-placeholder="Username"></span>
+		</div>
+
+		<!--Div2 com um placeholder para a Password -->
+		<div class="txtb"> 
+			<input type="password">
+			<span data-placeholder="Password"></span>
+		</div>
+
+		<!--Criação de um botão submit -->
+		<input type="submit" class="logbtn" value="Login">
+
+		<!--Div3 para o texto do botão -->
+		<div class="bottom-text">
+			Don't Have an Account? <a href="#">Sign up</a>
+		</div>
+
+	</form>
+
+	<script type="text/javascript">
+      $(".txtb input").on("focus",function(){
+        $(this).addClass("focus");
+      });
+
+      $(".txtb input").on("blur",function(){
+        if($(this).val() == "")
+        $(this).removeClass("focus");
+      });
+
+      </script>
+
+</body>
+</html>

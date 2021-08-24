@@ -1,0 +1,150 @@
+*{ /* Seleciona todos os elementos*/
+
+/*Margem para alem do inicio da pagina*/
+margin:0;
+/*Cria espaço a volta do elemento*/
+padding:0;
+/*decoração extra para o texto*/
+text-decoration: none;
+/*fonte do texto*/
+font-family: sans-serif;
+box-sizing: border-box;
+}
+
+body{ /*altera apenas os elementos do body*/
+
+	min-height: 100vh;
+
+	/*cria um degrade de cores*/
+	background-image: linear-gradient(120deg,#614385,#516395);
+}
+
+.login-form{
+	/*limita a largura para a caixa do login*/
+	width: 360px;
+	/*muda a cor da caixa para branco*/
+	background: #f1f1f1;
+	/*limita e da um tamanho para a altura da caixa do login*/
+	height:580px;
+	/*cria espaço*/
+	padding: 80px 40px;
+	/*cria uma borda na caixa*/
+	border-radius: 10px;
+	/*Posição da caixa absolute ou seja no meio do ecrã*/
+	position: absolute;
+
+
+	/*Afeta a posição da esquerda do elemento em 50%*/
+	left:50%;
+	/*Afeta a posição do topo do elemento em 50%*/
+	top:50%;
+	/*Repositiona um elemento nas direções horizontais e verticais*/
+	transform: translate(-50%,-50%);
+}
+
+.login-form h1{
+	/*alinhar o texto ao centro*/
+	text-align: center;
+	/*colocar uma margem na base de 60px*/
+	margin-bottom: 60px;
+}
+
+.txtb{
+	/*criar uma borda apenas na base de 2 pixeis solida e da cor #adadad*/
+	border-bottom: 2px solid #adadad;
+	position: relative;
+
+	/*margem uma da outra*/
+	margin: 30px 0;
+}
+
+.txtb input{
+	/*tamanho da letra*/
+	font-size: 15px;
+	/*cor da letra*/
+	color: #333;
+	/*nenhuma borda*/
+	border: none;
+	/*width a 100%*/
+	width: 100%;
+	/*sem nenhum outline*/
+	outline: none;
+	/*sem nenhum background*/
+	background: none;
+	/*criação de espaço*/
+	padding: 0 5px;
+	/*Altura em 40px*/
+	height: 40px;
+}
+
+.txtb span::before{
+	/*vai buscar os dados do placeholder do codigo html*/
+	content: attr(data-placeholder);
+	/*Posição da caixa absolute ou seja no meio do ecrã*/
+	position: absolute;
+
+	/*Afeta a posição do topo do elemento em 50%*/
+	top: 50%;
+	/*Afeta a posição da esquerda do elemento em 50px*/
+	left:5px;
+	/*Cor do texto*/
+	color: #adadad;
+	/*reposiciona um elemento em Y*/
+	transform: translateY(-50%);
+	/*coloca algo atras de tudo*/
+	z-index: -1;
+	/*transição de movimento em 5s*/
+	transition: .5s;
+}
+.livros-da-semana{
+	display: block;
+	position: relative;
+	float: left;
+	min-height: 1px;
+	box-sizing: border-box;
+	line-height: 1;
+	font-family:cursive;
+	font-size: 14px;
+
+}
+.txtb span::after{
+	content: '';
+	position: absolute;
+	width: 0%;
+	height: 2px;
+	/*background das linhas é o gradient*/
+	background: linear-gradient(120deg,#614385,#516395);
+	/*transição de movimento em 5s*/
+	transition: .5s;
+}
+
+.focus + span::before{
+	top: -5px;
+}
+
+.focus + span::after{
+	width: 0%;
+}
+
+.logbtn{
+	display: block;
+	width: 100%;
+	height: 50px;
+	border: none;
+	background: linear-gradient(120deg,#614385,#516395);
+	background-size: 200%;
+	color: #fff;
+	outline: none;
+	cursor : pointer;
+	transition: .5s;
+}
+
+.logbtn:hover{
+	background-position: right;
+}
+
+.bottom-text{
+	margin-top: 30px;
+	text-align: center;
+	font-size: 13px;
+}

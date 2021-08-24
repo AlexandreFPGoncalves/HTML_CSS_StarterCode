@@ -1,0 +1,75 @@
+*{ /* Seleciona todos os elementos*/
+font-family: 'Ropa Sans', sans-serif;
+}
+
+#container{
+	display:flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	height: 100vh;
+}
+
+h1{
+   color:white;
+   text-transform: uppercase;
+   border-top: 5px solid;
+   border-width: 5px;
+   font-size: 60px;
+}
+
+body{
+	background-image: linear-gradient(120deg,#4F4F51,#2C2B30);
+}
+
+body::-webkit-scrollbar {
+  width: 0.25rem;
+}
+
+body::-webkit-scrollbar-track {
+  background: #1e1e24;
+}
+
+body::-webkit-scrollbar-thumb {
+  background: #6649b8;
+}
+
+img{
+	height: 450px;
+	border-radius: 50%;
+}
+
+button{
+	display: block;
+	width: 15%;
+	margin: 20px;
+	height: 50px;
+	border: 2px solid white;
+	background: linear-gradient(120deg,#4F4F51,#2C2B30);
+	background-size: 200%;
+	color: #fff;
+	outline: none;
+	cursor : pointer;
+	transition: .5s;
+	font-size: 25px;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+}
+
+button:hover{
+	background-position: right;
+}
+
+.instagram{
+	height: 70px;
+}
+
+.footer{
+	text-align: center;
+}
+
+.ig-text{
+   color:white;
+   text-transform: uppercase;
+   border-top: 2px solid;
+}

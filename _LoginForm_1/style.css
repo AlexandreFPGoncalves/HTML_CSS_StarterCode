@@ -1,0 +1,120 @@
+/*Set do elemento Body*/
+body{
+
+	/*Margem para alem do inicio da pagina*/
+	margin:0;
+	/*Cria espaço a volta do elemento*/
+	padding:0;
+
+	/*Escolhe o tipo de fonte para o elemento
+	Pode também conter varios tipos de fontes
+	Ex:. font-family: "times", "serif", "arial";
+	Assim se uma das fontes n for encontrada ou suportada
+	Margem a proxima é executada*/
+	font-family: sans-serif;
+
+ 	/*Escolhe a cor do backgroud*/
+	background: #34495e;	/*#34495e é um azul escuro tipo cabedal*/
+}
+
+
+.box{	/*Set do elemento box*/
+	/*Largura em pixeis do elemento*/
+	width: 300px;
+
+	/*Espaço criado a volta do elemento em pixeis*/
+	padding: 40px;
+
+	/*Posição da caixa absolute ou seja no meio do ecrã*/
+	position: absolute;
+
+ 	/*Afeta a posição do topo do elemento em 50%*/
+	top:50%;
+	/*Afeita a posição esquerda do elemento em 50%*/
+	left:50%;
+
+	/*Repositiona um elemento nas direções horizontais e verticais*/
+	transform: translate(-50%,-50%);
+	/*Cor do background*/
+	background: #191919;
+	/*Centrar o texto*/
+	text-align: center;
+}
+
+.box h1{ /*Mudar o texto h1 (LOGIN)*/
+
+	/*set da cor branca para o texto*/
+	color:white;
+	/*Mudar o texto para Uppercase*/
+	text-transform: uppercase;
+	/*Mudar o peso da fonte*/
+	font-weight: 500;
+}
+
+	/*Set dos elemetnos text e password quando clicamos neles ou seja input*/
+.box input[type = "text"],.box input[type = "password"]{
+	/*Define que não há bordas*/
+	border:0;
+	/*Define que não existe background*/
+	background: none;
+	/*Maneira de como uma caixa é renderizada*/
+	display: block;
+	/*Margem de 20px auto*/
+	margin: 20px auto;
+	/*Alinhar o texto ao centro*/
+	text-align: center;
+	/*borda de 2px solida(tipo de borda) e set da para mudar de cor ao clicar*/
+	border: 2px solid #3498db;	
+	/*Espaço dentro da borda*/
+	padding: 14px 10px;
+	/*Largura do elemento em pixeis*/
+	width: 200px;
+	/*Set para não existir nenhum outline*/
+	outline: none;
+	/*Cor do texto dentro do elemento*/
+	color: white;
+	/*Arredondar as bordas das caixas em 24pixeis*/
+	border-radius: 24px;
+	/*Transição de 0.25segundos*/
+	/*Ao clicar no elemento estas alterações são feitas calmamente*/
+	transition: 0.25s;
+}
+
+/*Elementos text e password porém focados*/
+.box input[type = "text"]:focus,.box input[type = "password"]:focus{
+  width: 280px;
+  border-color: #2ecc71;
+}
+
+.box input[type="submit"]{/*Elemento submit*/
+		/*Define que não há bordas*/
+	border:0;
+	/*Define que não existe background*/
+	background: none;
+	/*Maneira de como uma caixa é renderizada*/
+	display: block;
+	/*Margem de 20px auto*/
+	margin: 20px auto;
+	/*Alinhar o texto ao centro*/
+	text-align: center;
+	/*borda de 2px solida(tipo de borda) e set da para mudar de cor ao clicar*/
+	border: 2px solid #2ecc71;	
+	/*Espaço dentro da borda*/
+	padding: 14px 40px;
+	/*Set para não existir nenhum outline*/
+	outline: none;
+	/*Cor do texto dentro do elemento*/
+	color: white;
+	/*Arredondar as bordas das caixas em 24pixeis*/
+	border-radius: 24px;
+	/*Transição de 0.25segundos*/
+	/*Ao clicar no elemento estas alterações são feitas calmamente*/
+	transition: 0.25s;
+	/*alterar o tipo de cursor para o ponteiro*/
+	cursos: pointer;
+}
+
+.box input[type="submit"]:hover{/*Elemento Submite quando se esta com o cursor sobre ele*/
+	/*Mudar cor do background*/
+	background: #2ecc71;
+}

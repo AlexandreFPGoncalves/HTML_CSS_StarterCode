@@ -1,0 +1,15 @@
+img{
+  float: left;
+  width: 30%;
+  margin: 1.66%;
+
+}
+
+h1{
+  font-family: Secular One;
+  margin-left: 1.66%;
+  font-weight: 800;
+  text-transform: uppercase;
+  border-bottom: 3px solid grey;
+  width: 30%;
+}

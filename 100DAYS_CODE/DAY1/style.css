@@ -1,0 +1,96 @@
+body{
+    height: 100%;
+    font-family: "Open Sans";
+}
+
+.background{
+    width: 100%;
+    height: 100%;
+    background-image: url("https://images.unsplash.com/photo-1518975173686-1d9d6de5afa3?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80");
+    filter: blur(1px);
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+
+.MainDIV{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 750px;
+    height: 650px;
+    border-radius: 6px;
+    background: #050712;
+    display: table;
+    text-align: center;
+    
+}
+
+.divimg{
+    background-image: url("https://images.unsplash.com/photo-1595650062493-6c77dbf6000c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=634&q=80");
+    width: auto;
+    height: 650px;
+}
+
+.divform{
+    display: table-cell;
+    vertical-align: top;
+    color:white;
+    border-radius: 6px;
+    
+}
+
+.CATLoversP{
+    margin-top: 45px;
+    font-weight: 700;
+    color: white;
+    font-size: 35px;
+}
+
+.LoversSPAN{
+    font-weight: 300;
+}
+
+
+.form-control{
+    background: none;
+    margin-bottom: 40px;
+    border-radius: 5px;
+    display: table-cell;
+    text-align: center;
+    width: 50%;
+    border-top-style: none;
+    border-left-style: none;
+    border-right-style: none;
+}
+.form-control:focus{
+    color: white;
+    background: none;
+    box-shadow: none;
+}
+
+.btn{
+    color:white;
+    
+    border: 1px solid white;
+    width: 170px;
+    transition: 0.75s;
+}
+
+.btn:hover{
+    background-color: #1d1d1d;
+    transition: 0.75s;
+}
+
+hr{
+    width: 70%;
+    border: 0;
+    height: 1px;
+    background: white;
+    background-image: linear-gradient(to right, #ccc, #333, #ccc);
+    margin-bottom: 110px;
+}
